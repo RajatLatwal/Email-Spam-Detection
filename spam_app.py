@@ -5,9 +5,10 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-# ✅ Download necessary NLTK data at runtime (for Streamlit Cloud)
+# ✅ Download necessary NLTK resources (for Streamlit Cloud)
 nltk.download('punkt')
 nltk.download('stopwords')
+
 ps = PorterStemmer()
 
 # ✅ Text preprocessing function
@@ -40,7 +41,7 @@ tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
 
 # ✅ Streamlit UI
-st.title("Email/SMS Spam Classifier 📩")
+st.title("📩 Email/SMS Spam Classifier")
 
 input_sms = st.text_area("Enter the message")
 

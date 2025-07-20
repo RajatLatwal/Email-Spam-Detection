@@ -8,7 +8,6 @@ from nltk.stem.porter import PorterStemmer
 # ✅ Download necessary NLTK data at runtime (for Streamlit Cloud)
 nltk.download('punkt')
 nltk.download('stopwords')
-
 ps = PorterStemmer()
 
 # ✅ Text preprocessing function
